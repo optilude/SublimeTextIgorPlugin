@@ -1,5 +1,5 @@
 [
 
-  { "keys": ["super+i"], "command": "igor_replace" }
+  { "keys": ["super+alt+i"], "command": "igor_replace" }
 
 ]
