@@ -3,7 +3,8 @@ import subprocess
 import sublime
 import sublime_plugin
 
-COMMAND = "/usr/local/bin/igor"
+from local_settings import COMMAND
+
 
 class IgorReaperCommand(sublime_plugin.EventListener):
     """On save of Python files, reap for mr.igor
@@ -54,3 +55,4 @@ class IgorReplaceCommand(sublime_plugin.TextCommand):
                 region = sublime.Region(0, self.view.size())
                 self.view.replace(edit, region, replacement)
                 sublime.status_message("Updated")
+
